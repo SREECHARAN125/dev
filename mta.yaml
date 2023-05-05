@@ -17,7 +17,7 @@ modules:
   - name: dev-db-deployer
   # ------------------------------------------------------------
     type: hdb
-    path: gen/db
+    path: db
     build-parameters:
       ignore:
         - default-*.json
@@ -34,10 +34,10 @@ modules:
 
 
   # --------------------- SERVER MODULE ------------------------
-  - name: dev-srv
+  - name: srv
   # ------------------------------------------------------------
     type: nodejs
-    path: gen/srv
+    path: srv
     build-parameters:
       ignore:
         - default-*.json
